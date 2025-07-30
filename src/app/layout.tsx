@@ -1,13 +1,12 @@
-// app/layout.tsx (✅ fixed font import only)
-
-import "./globals.css";
 import Navbar from "@/components/common/navbar/Navbar";
+import "./globals.css";
+import { Sora } from "next/font/google";
 import Footer from "@/components/common/footer/Footer";
 import Bottom from "@/components/bottom/Bottom";
 import { Toaster } from "react-hot-toast";
 import { ClerkProvider } from "@clerk/nextjs";
 import ReduxProvider from "@/components/reduxProvider/ReduxProvider";
-import { sora } from "@/lib/fonts"; // ✅ fixed
+export const sora = Sora({ subsets: ["latin"] });
 
 export const metadata = {
   title: "MMZ",
