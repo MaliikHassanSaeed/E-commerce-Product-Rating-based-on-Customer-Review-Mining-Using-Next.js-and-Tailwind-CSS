@@ -9,7 +9,7 @@ import {
 } from "../../ui/navigation-menu";
 import Link from "next/link";
 import logo from "./../../../../public/FAB logo.jpg";
-import { sora } from "@/app/layout";
+import { sora } from "@/lib/fonts";
 import { useEffect, useState } from "react";
 import { Spin as Hamburger } from "hamburger-react";
 import {
